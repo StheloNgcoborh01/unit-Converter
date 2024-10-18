@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The unit converter</title>
+    <link
+     rel ="stylesheet"
+     href ="style.css"
+     />
+</head>
+<body><div class="main">
+
+
+    <div class="head">
+        <button id ="info-btn"> 
+            <img id ="info" src ="symbols\info.png" alt ="info">
+           <p id = "about"> made by : asanda Ngcobo <br>
+              Contact Number:  +27 660 299 857</p>
+        </button>
+
+        <h1 id="head-text"> The Unit Converter</h1>
+    </div>
+     
+    <div class="container">
+       <div class ="section1">
+
+
+               <div class="length">
+                   <div id ="circle"> L
+
+                      </div>
+                        <button  id ="btn-length">  
+                         <h2 class ="l text">length</h2></button>
+                             <img class ="l symbol" src="symbols\length.png" alt="length symbol" draggable="false">
+
+            </div>
+
+
+            <div class ="mass">
+                 <div class ="massp" id ="circle">M
+
+                 </div>
+                       <button id="btn-mass">   
+                           <h2 class ="m text">mass</h2></button>
+                               <img class ="m symbol" src="symbols\mass.png" alt="Mass symbol" draggable="false">
+            </div>
+
+            
+              <div class ="Temperature">
+                   <div id ="circle">T
+                      </div>
+                         <button id="btn-tempetature">       
+                           <h2 id ="T-text">Temperature</h2></button>
+                                <img class ="T symbol" src="symbols\temperature.png" alt="Temperature symbol" draggable="false">
+              </div>
+
+              <div class="speed">
+                   <div id ="circle"> S
+
+                      </div>
+                         <button id="btn-speed">  
+                           <h2 class ="S text">speed</h2></button>
+                               <img class ="S symbol" src="symbols\speed.png" alt="speed symbol" draggable="false">
+
+              </div>
+ 
+
+              <div class="fluid">
+                <div id ="circle"> F
+                   </div>
+                      <button id="btn-fluid">  
+                        <h2 class ="F text">fluid</h2></button>
+                            <img class ="F symbol" src="symbols\fluid.png" alt="fluid symbol" draggable="false">
+
+             </div>
+
+           
+
+
+
+        </div>
+    
+        <div id="section2">
+
+
+         <div id = "length-section" class ="hide1">
+             <div  class="miniHead">
+                 <div class="logo-main">
+                  <div class="img-btn">   
+                      <img id ="logo" src ="symbols\length.png" alt ="logo" draggable="false">
+                  </div>
+                         <h1 id="head"> Length</h1>
+                 </div>
+              </div>
+                       <br>
+           <div id="change">
+              <select name ="btn-change1" id ="from">
+                <option value ="meters">meters</option>
+                <option value ="Centimeters">Centimeters</option>
+                <option value ="milimeters">milimeters</option>
+                <option value ="kilometer">kilometer</option>
+                <option value ="inches">inches</option>
+                <option value ="foots">foots</option>
+              </select>
+                   <input id ="btn-input" placeholder ="enter value.....">
+                      <h1 id ="to"> To </h1>
+                           <select id ="btn-change2" >
+                                <option value ="meters">meters</option>
+                                <option value ="Centimeters">Centimeters</option>
+                                <option value ="milimeters">milimeters</option>
+                                <option value ="kilometer">kilometer</option>
+                                <option value ="inches">inches</option>
+                                <option value ="foots">foots</option>
+                            </select>
+                             <br>
+                               <br>
+                         <button id = "btn-convert" >Convert</button>
+                             <br>
+                               <br>
+                         <label id = "equal">
+                          =
+                         </label>
+                         <input id="result" placeholder="0.0000" readonly>
+                     </div>
+          </div>
+
+
+<div class="mass-section" id= "hide2">
+                           <div  class="miniHead">
+                                <div class="logo-main">
+               <div class="img-btn">   
+                   <img id ="logo" src ="symbols\mass.png" alt ="logo" draggable="false">
+               </div>
+                      <h1 id="head"> Mass</h1>
+              </div>
+           </div>
+                    <br>
+        <div id="change">
+           <select name ="btn-change1" id ="from">
+             <option value ="kilogram">kilogram</option>
+             <option value ="gram">gram</option>
+  
+           </select>
+                <input id ="btn-input" placeholder ="enter value.....">
+                   <h1 id ="to"> To </h1>
+                        <select id ="btn-change2">
+                          <option value ="kilogram">kilogram</option>
+                          <option value ="gram">gram</option>
+                
+                         </select>
+                          <br>
+                            <br>
+                      <button id = "btn-convert2" >Convert</button>
+                          <br>
+                            <br>
+                           
+                      <label id = "equal">
+                       =
+                      </label>
+                      <input id="result" placeholder="0.0000" readonly>
+               </div>
+
+
+
+              
+             </div>
+
+
+             <div id = "temperature" class ="hide3">
+              <div  class="miniHead">
+                  <div class="logo-main">
+                   <div class="img-btn">   
+                       <img id ="logo" src ="symbols\temperature.png" alt ="logo" draggable="false">
+                   </div>
+                          <h1 id="head"> Temperature</h1>
+                  </div>
+               </div>
+                        <br>
+            <div id="change">
+               <select name ="btn-change1" id ="frrom">
+                 <option value = "degrees" > degrees</option>
+                 <option value = "kelvin" > kelvin</option>
+                 <option value = "ferenheight" > ferenhreight</option>
+               </select>
+                    <input id ="btn-input" class ="Btninput" placeholder ="enter values.....">
+                       <h1 id ="to"> To </h1>
+                            <select id ="btn-change3">
+                              <option value ="degrees"> degrees </option>
+                              <option value ="kelvin"> kelvin </option>
+                              <option value ="ferenheight"> ferenhreight </option>
+
+                             </select>
+                              <br>
+                                <br>
+                          <button id = "btn-convert3" >Convert</button>
+                              <br>
+                                <br>
+                          <label id = "equal">
+                           =
+                          </label>
+                          <input class ="resulter" id ="result"  placeholder="0.0000" >
+              </div>
+
+
+
+              
+            </div>
+            <div id = "speed-section" class ="hide4" >
+              <div  class="miniHead">
+                  <div class="logo-main">
+                   <div class="img-btn">   
+                       <img id ="logo" src ="symbols\speed.png" alt ="logo" draggable="false">
+                   </div>
+                          <h1 id="head"> speed</h1>
+                  </div>
+               </div>
+                        <br>
+            <div id="change">
+               <select name ="btn-change1">
+                 <option value ="meters-per-sec">meters per sec</option>
+                 <option value ="meters-per-sec">meters per sec</option>
+              
+       
+               </select>
+                    <input id ="btn-input" placeholder ="enter values.....">
+                       <h1 id ="to"> To </h1>
+                            <select id ="btn-change2">
+                              <option value ="meters-per-sec">meters per sec</option>
+                              <option value ="meters-per-sec">meters per sec</option>
+                           
+ 
+                             </select>
+                              <br>
+                                <br>
+                          <button id = "btn-convert4" >Convert</button>
+                              <br>
+                                <br>
+                          <label id = "equal">
+                           =
+                          </label>
+                          <input id="result" placeholder="0.0000" readonly>
+                        </div>
+
+
+        </div>
+                    
+        <div id = "fluid" class ="hide5">
+          <div  class="miniHead">
+              <div class="logo-main">
+               <div class="img-btn">   
+                   <img id ="logo" src ="symbols\fluid.png" alt ="logo" draggable="false" >
+               </div>
+                      <h1 id="head"> fluid</h1>
+              </div>
+           </div>
+                    <br>
+        <div id="change">
+           <select name ="btn-change1">
+             <option value ="no-idea">waterr</option>
+             <option value ="no-idea">waterr</option>
+       
+          
+   
+           </select>
+                <input id ="btn-input" placeholder ="enter values.....">
+                   <h1 id ="to"> To </h1>
+                        <select id ="btn-change2">
+                          <option value ="no-idea">waterr</option>
+                          <option value ="no-idea">waterr</option>
+                  
+                       
+
+                         </select>
+                          <br>
+                            <br>
+                      <button id = "btn-convert5" >Convert</button>
+                          <br>
+                            <br>
+                      <label id = "equal">
+                       =
+                      </label>
+                      <input id="result"  placeholder="0.0000" readonly>
+                  </div>
+
+
+
+
+
+      
+</div>
+    <script type="module" src ="index.js"></script>
+</body>
+</html>
